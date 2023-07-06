@@ -19,7 +19,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {return view('dashboard');})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', function () {
+
+
+    $user = App\Models\User::find(6);
+    $Permission = Spatie\Permission\Models\Permission::find(5);
+    $role3 = Spatie\Permission\Models\Role::find(6);
+    $user->assignRole($role3);
+    return view('dashboard');
+
+
+})->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
