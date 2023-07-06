@@ -59,10 +59,10 @@ class User extends Authenticatable
 }
 ```
 
-### Documentation
+### Documentation for Permission Package
 We can see this documentations and apply multiple functions.
 https://spatie.be/docs/laravel-permission/v5/installation-laravel
 
-### Video Tutorial
+### Video Tutorial for Permission Package
 We can follow this tutorial.
 https://www.youtube.com/watch?v=zIgYJlu03bI&list=PLe30vg_FG4OQ47ovsjgSSX5BZy_kqbuTO&index=8
